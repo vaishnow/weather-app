@@ -19,22 +19,22 @@ const fetchWData = async () => {
 
 			weatherData.innerHTML = `
 			<!-- Row 1 -->
-			<div class="col-12 fs-1">
+			<div class="col-12 fs-5">
 			  <span>${city}</span>,<span>${country}</span>
 			</div>
 			<!-- Row 2 -->
-			<div class="col-12" style="font-size: 6rem">${currTemp} °C</div>
+			<div class="col-12" style="font-size: 3rem">${currTemp} °C</div>
 			<!-- Row 3 -->
 			<div>
 			  <div class="col-12 m-1">Time : <span>${time.toTimeString()}</span></div>
 			</div>
 			<!-- Row 4 -->
-			<div class="col-12 fs-2">
+			<div class="col-12 fs-6">
 			  Feels Like <span>${flTemp} °C</span>.
 			  <span>${wDesc}</span>
 			</div>
 			<!-- Row 5 -->
-			<div class="col-12 fs-5">
+			<div class="col-12 fs-7">
 			  <div class="m-2">
 				Minimum Temperature : <span class="w-100">${minTemp} °C</span>
 			  </div>
@@ -43,11 +43,11 @@ const fetchWData = async () => {
 			  </div>
 			</div>
 			<!-- Row 6 -->
-			<div class="col-6 fs-4">Humidity : <span>${humidity}</span></div>
-			<div class="col-6 fs-4">Pressure : <span>${pressure}hPa</span></div>
+			<div class="col-6 fs-6">Humidity : <span>${humidity}</span></div>
+			<div class="col-6 fs-6">Pressure : <span>${pressure}hPa</span></div>
 			<!-- Row 7 -->
-			<div class="col-6 fs-4">Wind Speed : <span>${windSpd} m/s</span></div>
-			<div class="col-6 fs-4">Wind Direction : <span>${windDir} degree</span></div>`
+			<div class="col-6 fs-6">Wind Speed : <span>${windSpd} m/s</span></div>
+			<div class="col-6 fs-6">Wind Direction : <span>${windDir} degree</span></div>`
 		}
 		)
 	}
