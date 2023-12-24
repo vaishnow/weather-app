@@ -32,47 +32,58 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
-
-    <!-- JS -->
-    <script src="./script.js"></script>
   </head>
-  <body id="mainbody">
-    <nav class="navbar mb-5" style="background-color: rgba(9, 109, 109, 0.125);">
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold fs-4" href="#">
-          <i class="fa-solid fa-smog"></i>
-          Weather
-        </a>
-      </div>
-    </nav>
-    <div class="row w-100">
-      <div class="col"></div>
-      <div class="col-10 col-xs-10 col-sm-8 col-lg-8 col-xl-6">
-        <form class="d-flex px-5">
-          <div class="w-75">
-            <label for="cityName" class="visually-hidden">Search City</label>
-            <input
-              type="text"
-              class="form-control"
-              id="cityName"
-              placeholder="Search City"
-            />
-          </div>
-          <div class="w-25 d-flex">
-            <button type="button" onclick="fetchWData()" class="btn btn-primary mb-3">Search</button>
-            <button type="reset" class="btn btn-danger mb-3">
-              <i class="fa-solid fa-rotate-left"></i>
-            </button>
-          </div>
-        </form>
-        <div
-          class="row g-3 p-3 mt-3 rounded"
-          style="background-color: rgba(2, 11, 19, 0.139)"
-          id="weatherData"
-        >Enter City Name to View Results
+  <body>
+    <div id="mainbody">
+      <nav
+        class="navbar mb-5"
+        style="background-color: rgba(9, 109, 109, 0.125)"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-4" href="#">
+            <i class="fa-solid fa-smog"></i>
+            Weather
+          </a>
         </div>
+      </nav>
+      <div class="row w-100">
+        <div class="col"></div>
+        <div class="col-10 col-xs-10 col-sm-8 col-lg-8 col-xl-6">
+          <form class="d-flex px-5">
+            <div class="w-75">
+              <label for="cityName" class="visually-hidden">Search City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cityName"
+                placeholder="Search City"
+              />
+            </div>
+            <div class="w-25 d-flex">
+              <button
+                type="button"
+                onclick="fetchWData()"
+                class="btn btn-primary mb-3"
+              >
+                Search
+              </button>
+              <button type="reset" class="btn btn-danger mb-3">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+            </div>
+          </form>
+          <div
+            class="row g-3 p-3 mt-3 rounded"
+            style="background-color: rgba(2, 11, 19, 0.139)"
+            id="weatherData"
+          >
+            Enter City Name to View Results
+          </div>
+        </div>
+        <div class="col"></div>
       </div>
-      <div class="col"></div>
     </div>
   </body>
+  <!-- JS -->
+  <script src="./script.js"></script>
 </html>

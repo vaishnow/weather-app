@@ -1,8 +1,8 @@
-*{
+* {
 	/* border: 1px solid red; */
 }
 
-body{
-	background-image: linear-gradient(to top left,#3c4bf4,#f1eed6);
+#mainbody {
+	background-image: linear-gradient(to top left, #1054a9, #c85508);
 	height: 100vh;
 }
